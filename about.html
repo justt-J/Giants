@@ -28,7 +28,7 @@
 
 </head>
 
-<body class="sub_page">
+<body onload="loader()">
 
   <div class="hero_area">
     <!-- header section strats -->
@@ -47,36 +47,149 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  ">
-              <li class="nav-item ">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="about.html"> About</a>
+                <a class="nav-link" href="#about"> About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="service.html">Colleges</a>
-              </li>
-              
             </ul>
-            <div class="quote_btn-container">
-             
-            </div>
           </div>
         </nav>
       </div>
     </header>
     <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      
+        <div class="carousel-inner" id="home">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img  src="images/logo.svg" alt="" >
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      URS MORONG Campus
+                    </h1>
+                    <p>
+                      University Of Rizal System
+                    </p>
+                    <div class="btn-box">
+                      <a href="http://www.urs.edu.ph/" target="_blank" class="btn1">
+                        Official Website
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+       
+      </div>
+
+    </section>
+    <!-- end slider section -->
   </div>
 
+  <!-- service section -->
+  <section class="service_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Our Colleges
+        </h2>
+      
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/s1.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Engineering
+              </h5>
+              <p>
+                A College of Engineering is a university section that educates students in engineering disciplines, offering degrees and fostering research and innovation in technology and engineering.
+              </p>
+            
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/s2.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Education
+              </h5>
+              <p>
+                university division focused on teacher training and education-related disciplines. It offers degrees, conducts research, and prepares students for careers in education.
+              </p>
+           
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/s3.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Science
+              </h5>
+              <p>
+                university department specializing in various scientific disciplines. It offers undergraduate and graduate degrees, conducts research, and contributes to advancements in scientific knowledge.
+              </p>
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/s4.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Information Technology 
+              </h5>
+              <p>
+                university division that provides degrees in fields like computer science and information systems, emphasizes practical skills, and contributes to advancements in technology.
+              </p>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-box">
+       
+      </div>
+    </div>
+  </section>
+  <!-- end service section -->
+
   <!-- about section -->
-  <br><br><br><br>
-  <section class="about_section layout_padding">
+  
+
+  <section class="about_section layout_padding" id="about">
     <div class="container  ">
       <div class="row">
         <div class="col-md-6">
           <div class="detail-box">
             <div class="heading_container">
-              
               <h2>
                 About Us
               </h2>
@@ -108,8 +221,6 @@ The President is the chief executive officer, university leader and spokesperson
     <iframe src="https://maps.google.com/maps?q=URS-Morong,+Njemačka&output=embed" width="50%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
 <br><br><br><br><br><br><br><br><br>
-
-  </div>
   <div class="footer_container">
     <!-- info section -->
 
@@ -132,9 +243,7 @@ The President is the chief executive officer, university leader and spokesperson
                 <a class="" href="service.html">
                   Services
                 </a>
-                <a class="" href="contact.html">
-                  Contact Us
-                </a>
+
               </div>
             </div>
           </div>
@@ -145,14 +254,14 @@ The President is the chief executive officer, university leader and spokesperson
                 Address
               </h4>
               <div class="contact_link_box">
-                <a href="">
+                <a target="_blank" href="https://www.google.com/maps?ll=14.516689,121.235623&z=16&t=m&hl=en-US&gl=US&mapclient=embed&cid=8197215706106764379">
                   <i class="fa fa-map-marker" aria-hidden="true"></i>
                   <span>
                     Sumulong St, Morong, Rizal
                   </span>
                 </a>
                 
-                <a href="">
+                <a href="mailto:info@urs.edu.ph">
                   <i class="fa fa-envelope" aria-hidden="true"></i>
                   <span>
                     info@urs.edu.ph
@@ -206,16 +315,50 @@ The President is the chief executive officer, university leader and spokesperson
   <!-- End Google Map -->
   <script>
     window.embeddedChatbotConfig = {
-    chatbotId: "eXn6yr7MTUrZHSLEn0g-5",
+    chatbotId: "-B5cgcoCytUotzlwSZRpW",
     domain: "www.chatbase.co"
     }
     </script>
     <script
     src="https://www.chatbase.co/embed.min.js"
-    chatbotId="eXn6yr7MTUrZHSLEn0g-5"
+    chatbotId="-B5cgcoCytUotzlwSZRpW"
     domain="www.chatbase.co"
     defer>
     </script>
+    <script>
+      const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll("nav .container ul li");
+      window.onscroll = function() {myFunction()};
+      
+      var navbar = document.getElementById("navbarSupportedContent");
+      var sticky = navbar.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+        var current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (pageYOffset >= sectionTop - 60) {
+      current = section.getAttribute("id"); }
+  });
+
+  navLi.forEach((li) => {
+    li.classList.remove("active");
+    if (li.classList.contains(current)) {
+      li.classList.add("active");
+    }
+  });
+      }
+
+      function loader(){
+        window.location.href = "#about";
+      }
+      </script>
 </body>
 
 </html>
