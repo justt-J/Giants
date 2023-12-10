@@ -1038,6 +1038,7 @@ pre code {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
+    padding-right: 50px;
   }
   .col-md-7 {
     -ms-flex: 0 0 58.333333%;
@@ -4361,6 +4362,7 @@ input[type="button"].btn-block {
     display: flex !important;
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
+    margin-right: -950px;
   }
   .navbar-expand-lg .navbar-toggler {
     display: none;
